@@ -11,8 +11,16 @@
   margin: 5px 0 5px 0;
 }
 
+.button__label_bills {
+  color: #A9D6E5;
+}
+
 .button__label_alt {
   color: #081C15;
+}
+
+.button__label_alt_bills {
+  color: #012A4A;
 }
 
 @media screen and (max-width: 720px) {

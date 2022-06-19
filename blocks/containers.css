@@ -21,6 +21,10 @@
   height: 10%;
 }
 
+.containers_bills {
+  background-color: #014F86;
+}
+
 @media screen and (max-width: 720px) {
   .containers {
     width: 98%;

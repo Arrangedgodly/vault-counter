@@ -1,0 +1,15 @@
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #74C69D;
+  margin: 5px 0 5px 0;
+  border-style: none;
+  width: 25px;
+  height: 25px;
+}
+
+.count_alt {
+  color: #081C15;
+}

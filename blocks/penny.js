@@ -66,7 +66,11 @@ totalC.innerHTML = totalCount;
 
 const pennyS = document.getElementById("pennyS");
 const pennySUp = document.getElementById("pennySUp");
+const pennySUpFive = document.getElementById("pennySUpFive");
+const pennySUpTen = document.getElementById("pennySUpTen");
 const pennySDown = document.getElementById("pennySDown");
+const pennySDownFive = document.getElementById("pennySDownFive");
+const pennySDownTen = document.getElementById("pennySDownTen");
 var pennySCount = 0;
 pennyS.innerHTML = pennySCount;
 
@@ -87,6 +91,20 @@ const pennySingleUp = () => {
   pennyT.innerHTML = pennyTCount;
 };
 
+const pennyFiveUp = () => {
+  pennySCount += 5;
+  pennyTCount = convertMoney(.01, pennySCount, pennyBCount);
+  pennyS.innerHTML = pennySCount;
+  pennyT.innerHTML = pennyTCount;
+};
+
+const pennyTenUp = () => {
+  pennySCount += 10;
+  pennyTCount = convertMoney(.01, pennySCount, pennyBCount);
+  pennyS.innerHTML = pennySCount;
+  pennyT.innerHTML = pennyTCount;
+};
+
 const pennySingleDown = () => {
   pennySCount--;
   if (pennySCount < 0) {
@@ -97,8 +115,32 @@ const pennySingleDown = () => {
   pennyT.innerHTML = pennyTCount;
 };
 
+const pennyFiveDown = () => {
+  pennySCount -= 5;
+  if (pennySCount < 0) {
+    pennySCount = 0;
+  }
+  pennyTCount = convertMoney(.01, pennySCount, pennyBCount);
+  pennyS.innerHTML = pennySCount;
+  pennyT.innerHTML = pennyTCount;
+};
+
+const pennyTenDown = () => {
+  pennySCount -= 10;
+  if (pennySCount < 0) {
+    pennySCount = 0;
+  }
+  pennyTCount = convertMoney(.01, pennySCount, pennyBCount);
+  pennyS.innerHTML = pennySCount;
+  pennyT.innerHTML = pennyTCount;
+};
+
 pennySUp.addEventListener("click", pennySingleUp);
+pennySUpFive.addEventListener("click", pennyFiveUp);
+pennySUpTen.addEventListener("click", pennyTenUp);
 pennySDown.addEventListener("click", pennySingleDown);
+pennySDownFive.addEventListener("click", pennyFiveDown);
+pennySDownTen.addEventListener("click", pennyTenDown);
 
 const pennyBoxUp = () => {
   pennyBCount++;
@@ -122,7 +164,11 @@ pennyBDown.addEventListener("click", pennyBoxDown);
 
 const nickelS = document.getElementById("nickelS");
 const nickelSUp = document.getElementById("nickelSUp");
+const nickelSUpFive = document.getElementById("nickelSUpFive");
+const nickelSUpTen = document.getElementById("nickelSUpTen");
 const nickelSDown = document.getElementById("nickelSDown");
+const nickelSDownFive = document.getElementById("nickelSDownFive");
+const nickelSDownTen = document.getElementById("nickelSDownTen");
 var nickelSCount = 0;
 nickelS.innerHTML = nickelSCount;
 
@@ -143,6 +189,20 @@ const nickelSingleUp = () => {
   nickelT.innerHTML = nickelTCount;
 };
 
+const nickelFiveUp = () => {
+  nickelSCount += 5;
+  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
+  nickelS.innerHTML = nickelSCount;
+  nickelT.innerHTML = nickelTCount;
+};
+
+const nickelTenUp = () => {
+  nickelSCount += 10;
+  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
+  nickelS.innerHTML = nickelSCount;
+  nickelT.innerHTML = nickelTCount;
+};
+
 const nickelSingleDown = () => {
   nickelSCount--;
   if (nickelSCount < 0) {
@@ -153,8 +213,32 @@ const nickelSingleDown = () => {
   nickelT.innerHTML = nickelTCount;
 };
 
+const nickelFiveDown = () => {
+  nickelSCount -= 5;
+  if (nickelSCount < 0) {
+    nickelSCount = 0;
+  }
+  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
+  nickelS.innerHTML = nickelSCount;
+  nickelT.innerHTML = nickelTCount;
+};
+
+const nickelTenDown = () => {
+  nickelSCount -= 10;
+  if (nickelSCount < 0) {
+    nickelSCount = 0;
+  }
+  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
+  nickelS.innerHTML = nickelSCount;
+  nickelT.innerHTML = nickelTCount;
+};
+
 nickelSUp.addEventListener("click", nickelSingleUp);
+nickelSUpFive.addEventListener("click", nickelFiveUp);
+nickelSUpTen.addEventListener("click", nickelTenUp);
 nickelSDown.addEventListener("click", nickelSingleDown);
+nickelSDownFive.addEventListener("click", nickelFiveDown);
+nickelSDownTen.addEventListener("click", nickelTenDown);
 
 const nickelBoxUp = () => {
   nickelBCount++;
@@ -560,10 +644,18 @@ const cumulative = () => {
 
 pennySUp.addEventListener("click", cumulative);
 pennySDown.addEventListener("click", cumulative);
+pennySUpFive.addEventListener("click", cumulative);
+pennySDownFive.addEventListener("click", cumulative);
+pennySUpTen.addEventListener("click", cumulative);
+pennySDownTen.addEventListener("click", cumulative);
 pennyBUp.addEventListener("click", cumulative);
 pennyBDown.addEventListener("click", cumulative);
 nickelSUp.addEventListener("click", cumulative);
 nickelSDown.addEventListener("click", cumulative);
+nickelSUpFive.addEventListener("click", cumulative);
+nickelSDownFive.addEventListener("click", cumulative);
+nickelSUpTen.addEventListener("click", cumulative);
+nickelSDownTen.addEventListener("click", cumulative);
 nickelBUp.addEventListener("click", cumulative);
 nickelBDown.addEventListener("click", cumulative);
 dimeSUp.addEventListener("click", cumulative);

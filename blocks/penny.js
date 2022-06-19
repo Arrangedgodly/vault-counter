@@ -625,7 +625,7 @@ billHundredBUp.addEventListener("click", billHundredBoxUp);
 billHundredBDown.addEventListener("click", billHundredBoxDown);
 
 const cumulative = () => {
-  totalCount = (billHundredTCount + billFiftyTCount + billTwentyTCount + billFiveTCount + billTCount + quarterTCount + dimeTCount + nickelTCount + pennyTCount);
+  totalCount = (billHundredTCount + billFiftyTCount + billTwentyTCount + billTenTCount + billFiveTCount + billTCount + quarterTCount + dimeTCount + nickelTCount + pennyTCount);
   totalC.innerHTML = totalCount;
 }
 

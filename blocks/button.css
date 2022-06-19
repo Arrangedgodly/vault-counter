@@ -1,10 +1,27 @@
 .button {
   width: 50px;
   height: 50px;
-  margin: 10px auto 5px auto;
+  margin: 10px auto 10px auto;
 }
 
 .button__label {
   text-align: center;
   font-size: 18px;
+  color: #74C69D;
+  margin: 0 0 10px 0;
+}
+
+.button__label_alt {
+  color: #081C15;
+}
+
+@media screen and (max-width: 720px) {
+  .button__label {
+    font-size: 3.75vw;
+  }
+
+  .button__label_alt {
+    font-size: 3.25vw;
+    margin: 0 0 10px 0;
+  }
 }

@@ -25,6 +25,10 @@
   background-color: #014F86;
 }
 
+.containers_red {
+  background-color: #590D22;
+}
+
 @media screen and (max-width: 720px) {
   .containers {
     width: 98%;

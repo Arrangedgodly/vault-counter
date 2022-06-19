@@ -30,6 +30,16 @@
   background-color: #A9D6E5;
 }
 
+.container_square_red {
+  background-color: #FFCCD5;
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 80%;
+  height: 100px;
+  margin: 10px auto 10px auto;
+}
+
 @media screen and (max-width: 720px) {
   .container {
     min-height: 170px;

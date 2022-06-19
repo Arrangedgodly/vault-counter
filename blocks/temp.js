@@ -1,4 +1,6 @@
-billHundredSUp.addEventListener("click", cumulative);
-billHundredSDown.addEventListener("click", cumulative);
-billHundredBUp.addEventListener("click", cumulative);
-billHundredBDown.addEventListener("click", cumulative);
+billTwentySUp.addEventListener("click", redBag);
+billTwentySDown.addEventListener("click", redBag);
+billFiftySUp.addEventListener("click", redBag);
+billFiftySDown.addEventListener("click", redBag);
+billHundredSUp.addEventListener("click", redBag);
+billHundredSDown.addEventListener("click", redBag);

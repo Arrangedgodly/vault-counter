@@ -462,21 +462,13 @@ const billTwentySDown = document.getElementById("billTwentySDown");
 var billTwentySCount = 0;
 billTwentyS.innerHTML = billTwentySCount;
 
-const billTwentyB = document.getElementById("billTwentyB");
-const billTwentyBUp = document.getElementById("billTwentyBUp");
-const billTwentyBDown = document.getElementById("billTwentyBDown");
 var billTwentyBCount = 0;
-billTwentyB.innerHTML = billTwentyBCount;
-
-const billTwentyT = document.getElementById("billTwentyT");
 var billTwentyTCount = convertMoney(20, billTwentySCount, billTwentyBCount);
-billTwentyT.innerHTML = billTwentyTCount;
 
 const billTwentySingleUp = () => {
   billTwentySCount++;
   billTwentyTCount = convertMoney(20, billTwentySCount, billTwentyBCount);
   billTwentyS.innerHTML = billTwentySCount;
-  billTwentyT.innerHTML = billTwentyTCount;
 };
 
 const billTwentySingleDown = () => {
@@ -486,31 +478,10 @@ const billTwentySingleDown = () => {
   }
   billTwentyTCount = convertMoney(20, billTwentySCount, billTwentyBCount);
   billTwentyS.innerHTML = billTwentySCount;
-  billTwentyT.innerHTML = billTwentyTCount;
 };
 
 billTwentySUp.addEventListener("click", billTwentySingleUp);
 billTwentySDown.addEventListener("click", billTwentySingleDown);
-
-const billTwentyBoxUp = () => {
-  billTwentyBCount++;
-  billTwentyTCount = convertMoney(20, billTwentySCount, billTwentyBCount);
-  billTwentyB.innerHTML = billTwentyBCount;
-  billTwentyT.innerHTML = billTwentyTCount;
-};
-
-const billTwentyBoxDown = () => {
-  billTwentyBCount--;
-  if (billTwentyBCount < 0) {
-    billTwentyBCount = 0;
-  }
-  billTwentyTCount = convertMoney(20, billTwentySCount, billTwentyBCount);
-  billTwentyB.innerHTML = billTwentyBCount;
-  billTwentyT.innerHTML = billTwentyTCount;
-};
-
-billTwentyBUp.addEventListener("click", billTwentyBoxUp);
-billTwentyBDown.addEventListener("click", billTwentyBoxDown);
 
 const billFiftyS = document.getElementById("billFiftyS");
 const billFiftySUp = document.getElementById("billFiftySUp");
@@ -518,21 +489,13 @@ const billFiftySDown = document.getElementById("billFiftySDown");
 var billFiftySCount = 0;
 billFiftyS.innerHTML = billFiftySCount;
 
-const billFiftyB = document.getElementById("billFiftyB");
-const billFiftyBUp = document.getElementById("billFiftyBUp");
-const billFiftyBDown = document.getElementById("billFiftyBDown");
 var billFiftyBCount = 0;
-billFiftyB.innerHTML = billFiftyBCount;
-
-const billFiftyT = document.getElementById("billFiftyT");
 var billFiftyTCount = convertMoney(50, billFiftySCount, billFiftyBCount);
-billFiftyT.innerHTML = billFiftyTCount;
 
 const billFiftySingleUp = () => {
   billFiftySCount++;
   billFiftyTCount = convertMoney(50, billFiftySCount, billFiftyBCount);
   billFiftyS.innerHTML = billFiftySCount;
-  billFiftyT.innerHTML = billFiftyTCount;
 };
 
 const billFiftySingleDown = () => {
@@ -542,31 +505,10 @@ const billFiftySingleDown = () => {
   }
   billFiftyTCount = convertMoney(50, billFiftySCount, billFiftyBCount);
   billFiftyS.innerHTML = billFiftySCount;
-  billFiftyT.innerHTML = billFiftyTCount;
 };
 
 billFiftySUp.addEventListener("click", billFiftySingleUp);
 billFiftySDown.addEventListener("click", billFiftySingleDown);
-
-const billFiftyBoxUp = () => {
-  billFiftyBCount++;
-  billFiftyTCount = convertMoney(50, billFiftySCount, billFiftyBCount);
-  billFiftyB.innerHTML = billFiftyBCount;
-  billFiftyT.innerHTML = billFiftyTCount;
-};
-
-const billFiftyBoxDown = () => {
-  billFiftyBCount--;
-  if (billFiftyBCount < 0) {
-    billFiftyBCount = 0;
-  }
-  billFiftyTCount = convertMoney(50, billFiftySCount, billFiftyBCount);
-  billFiftyB.innerHTML = billFiftyBCount;
-  billFiftyT.innerHTML = billFiftyTCount;
-};
-
-billFiftyBUp.addEventListener("click", billFiftyBoxUp);
-billFiftyBDown.addEventListener("click", billFiftyBoxDown);
 
 const billHundredS = document.getElementById("billHundredS");
 const billHundredSUp = document.getElementById("billHundredSUp");
@@ -574,21 +516,13 @@ const billHundredSDown = document.getElementById("billHundredSDown");
 var billHundredSCount = 0;
 billHundredS.innerHTML = billHundredSCount;
 
-const billHundredB = document.getElementById("billHundredB");
-const billHundredBUp = document.getElementById("billHundredBUp");
-const billHundredBDown = document.getElementById("billHundredBDown");
 var billHundredBCount = 0;
-billHundredB.innerHTML = billHundredBCount;
-
-const billHundredT = document.getElementById("billHundredT");
 var billHundredTCount = convertMoney(100, billHundredSCount, billHundredBCount);
-billHundredT.innerHTML = billHundredTCount;
 
 const billHundredSingleUp = () => {
   billHundredSCount++;
   billHundredTCount = convertMoney(100, billHundredSCount, billHundredBCount);
   billHundredS.innerHTML = billHundredSCount;
-  billHundredT.innerHTML = billHundredTCount;
 };
 
 const billHundredSingleDown = () => {
@@ -598,31 +532,26 @@ const billHundredSingleDown = () => {
   }
   billHundredTCount = convertMoney(100, billHundredSCount, billHundredBCount);
   billHundredS.innerHTML = billHundredSCount;
-  billHundredT.innerHTML = billHundredTCount;
 };
 
 billHundredSUp.addEventListener("click", billHundredSingleUp);
 billHundredSDown.addEventListener("click", billHundredSingleDown);
 
-const billHundredBoxUp = () => {
-  billHundredBCount++;
-  billHundredTCount = convertMoney(100, billHundredSCount, billHundredBCount);
-  billHundredB.innerHTML = billHundredBCount;
-  billHundredT.innerHTML = billHundredTCount;
-};
+let redBagTotal = 0;
+const redBagT = document.getElementById("redBagTotal");
+redBagT.innerHTML = redBagTotal;
 
-const billHundredBoxDown = () => {
-  billHundredBCount--;
-  if (billHundredBCount < 0) {
-    billHundredBCount = 0;
-  }
-  billHundredTCount = convertMoney(100, billHundredSCount, billHundredBCount);
-  billHundredB.innerHTML = billHundredBCount;
-  billHundredT.innerHTML = billHundredTCount;
-};
+const redBag = () => {
+  redBagTotal = (billTwentyTCount + billFiftyTCount + billHundredTCount);
+  redBagT.innerHTML = redBagTotal;
+}
 
-billHundredBUp.addEventListener("click", billHundredBoxUp);
-billHundredBDown.addEventListener("click", billHundredBoxDown);
+billTwentySUp.addEventListener("click", redBag);
+billTwentySDown.addEventListener("click", redBag);
+billFiftySUp.addEventListener("click", redBag);
+billFiftySDown.addEventListener("click", redBag);
+billHundredSUp.addEventListener("click", redBag);
+billHundredSDown.addEventListener("click", redBag);
 
 const cumulative = () => {
   totalCount = (billHundredTCount + billFiftyTCount + billTwentyTCount + billTenTCount + billFiveTCount + billTCount + quarterTCount + dimeTCount + nickelTCount + pennyTCount);
@@ -659,13 +588,7 @@ billTenBUp.addEventListener("click", cumulative);
 billTenBDown.addEventListener("click", cumulative);
 billTwentySUp.addEventListener("click", cumulative);
 billTwentySDown.addEventListener("click", cumulative);
-billTwentyBUp.addEventListener("click", cumulative);
-billTwentyBDown.addEventListener("click", cumulative);
 billFiftySUp.addEventListener("click", cumulative);
 billFiftySDown.addEventListener("click", cumulative);
-billFiftyBUp.addEventListener("click", cumulative);
-billFiftyBDown.addEventListener("click", cumulative);
 billHundredSUp.addEventListener("click", cumulative);
 billHundredSDown.addEventListener("click", cumulative);
-billHundredBUp.addEventListener("click", cumulative);
-billHundredBDown.addEventListener("click", cumulative);

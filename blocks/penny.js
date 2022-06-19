@@ -60,6 +60,10 @@ function convertMoney(val, one, two) {
   return total;
 }
 
+var totalCount = 0;
+const totalC = document.getElementById("totalCount");
+totalC.innerHTML = totalCount;
+
 const pennyS = document.getElementById("pennyS");
 const pennySUp = document.getElementById("pennySUp");
 const pennySDown = document.getElementById("pennySDown");
@@ -619,3 +623,49 @@ const billHundredBoxDown = () => {
 
 billHundredBUp.addEventListener("click", billHundredBoxUp);
 billHundredBDown.addEventListener("click", billHundredBoxDown);
+
+const cumulative = () => {
+  totalCount = (billHundredTCount + billFiftyTCount + billTwentyTCount + billFiveTCount + billTCount + quarterTCount + dimeTCount + nickelTCount + pennyTCount);
+  totalC.innerHTML = totalCount;
+}
+
+pennySUp.addEventListener("click", cumulative);
+pennySDown.addEventListener("click", cumulative);
+pennyBUp.addEventListener("click", cumulative);
+pennyBDown.addEventListener("click", cumulative);
+nickelSUp.addEventListener("click", cumulative);
+nickelSDown.addEventListener("click", cumulative);
+nickelBUp.addEventListener("click", cumulative);
+nickelBDown.addEventListener("click", cumulative);
+dimeSUp.addEventListener("click", cumulative);
+dimeSDown.addEventListener("click", cumulative);
+dimeBUp.addEventListener("click", cumulative);
+dimeBDown.addEventListener("click", cumulative);
+quarterSUp.addEventListener("click", cumulative);
+quarterSDown.addEventListener("click", cumulative);
+quarterBUp.addEventListener("click", cumulative);
+quarterBDown.addEventListener("click", cumulative);
+billSUp.addEventListener("click", cumulative);
+billSDown.addEventListener("click", cumulative);
+billBUp.addEventListener("click", cumulative);
+billBDown.addEventListener("click", cumulative);
+billFiveSUp.addEventListener("click", cumulative);
+billFiveSDown.addEventListener("click", cumulative);
+billFiveBUp.addEventListener("click", cumulative);
+billFiveBDown.addEventListener("click", cumulative);
+billTenSUp.addEventListener("click", cumulative);
+billTenSDown.addEventListener("click", cumulative);
+billTenBUp.addEventListener("click", cumulative);
+billTenBDown.addEventListener("click", cumulative);
+billTwentySUp.addEventListener("click", cumulative);
+billTwentySDown.addEventListener("click", cumulative);
+billTwentyBUp.addEventListener("click", cumulative);
+billTwentyBDown.addEventListener("click", cumulative);
+billFiftySUp.addEventListener("click", cumulative);
+billFiftySDown.addEventListener("click", cumulative);
+billFiftyBUp.addEventListener("click", cumulative);
+billFiftyBDown.addEventListener("click", cumulative);
+billHundredSUp.addEventListener("click", cumulative);
+billHundredSDown.addEventListener("click", cumulative);
+billHundredBUp.addEventListener("click", cumulative);
+billHundredBDown.addEventListener("click", cumulative);

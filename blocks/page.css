@@ -16,8 +16,14 @@ main {
 
 @media screen and (max-width: 720px) {
   .page__header {
-    font-size: 9vw;
+    font-size: 6vw;
     max-width: 75%;
     margin: 0 auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .page__header {
+    font-size: 8vw;
   }
 }

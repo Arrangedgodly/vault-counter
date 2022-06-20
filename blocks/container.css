@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 98%;
-  min-height: 210px;
+  min-height: 300px;
 }
 
 .container_square {
@@ -36,12 +36,18 @@
   grid-column-start: 1;
   grid-column-end: 4;
   width: 80%;
-  height: 100px;
+  min-height: 100px;
   margin: 10px auto 10px auto;
 }
 
 @media screen and (max-width: 720px) {
   .container {
-    min-height: 170px;
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    min-height: 150px;
   }
 }

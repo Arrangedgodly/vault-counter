@@ -2,12 +2,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
-  width: 55vw;
+  width: 70vw;
   margin: 10px auto 10px auto;
   border-style: none;
   background-color: #2D6A4F;
   border-radius: 10px;
   box-shadow: 3px 3px 3px #000;
+}
+
+.containers_ex-buttons {
+  grid-template-columns: 1.5fr 1fr 1fr;
 }
 
 .containers_alt {

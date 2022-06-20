@@ -29,3 +29,9 @@
 .count_alt_red {
   color: #590D22;
 }
+
+@media screen and (max-width: 720px) {
+  .count {
+    font-size: 3.5vw;
+  }
+}

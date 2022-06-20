@@ -1,77 +1,56 @@
-const nickelS = document.getElementById("nickelS");
-const nickelSUp = document.getElementById("nickelSUp");
-const nickelSUpFive = document.getElementById("nickelSUpFive");
-const nickelSUpTen = document.getElementById("nickelSUpTen");
-const nickelSDown = document.getElementById("nickelSDown");
-const nickelSDownFive = document.getElementById("nickelSDownFive");
-const nickelSDownTen = document.getElementById("nickelSDownTen");
-var nickelSCount = 0;
-nickelS.innerHTML = nickelSCount;
+const billTenS = document.getElementById("billTenS");
+const billTenSUp = document.getElementById("billTenSUp");
+const billTenSUpFive = document.getElementById("billTenSUpFive");
+const billTenSDown = document.getElementById("billTenSDown");
+const billTenSDownFive = document.getElementById("billTenSDownFive");
+var billTenSCount = 0;
+billTenS.innerHTML = billTenSCount;
 
-const nickelB = document.getElementById("nickelB");
-const nickelBUp = document.getElementById("nickelBUp");
-const nickelBDown = document.getElementById("nickelBDown");
-var nickelBCount = 0;
-nickelB.innerHTML = nickelBCount;
+const billTenB = document.getElementById("billTenB");
+const billTenBUp = document.getElementById("billTenBUp");
+const billTenBDown = document.getElementById("billTenBDown");
+var billTenBCount = 0;
+billTenB.innerHTML = billTenBCount;
 
-const nickelT = document.getElementById("nickelT");
-var nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-nickelT.innerHTML = nickelTCount;
+const billTenT = document.getElementById("billTenT");
+var billTenTCount = convertMoney(10, billTenSCount, billTenBCount);
+billTenT.innerHTML = billTenTCount;
 
-const nickelSingleUp = () => {
-  nickelSCount++;
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
+const billTenSingleUp = () => {
+  billTenSCount++;
+  billTenTCount = convertMoney(10, billTenSCount, billTenBCount);
+  billTenS.innerHTML = billTenSCount;
+  billTenT.innerHTML = billTenTCount;
 };
 
-const nickelFiveUp = () => {
-  nickelSCount += 5;
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
+const billTenFiveUp = () => {
+  billTenSCount += 5;
+  billTenTCount = convertMoney(10, billTenSCount, billTenBCount);
+  billTenS.innerHTML = billTenSCount;
+  billTenT.innerHTML = billTenTCount;
 };
 
-const nickelTenUp = () => {
-  nickelSCount += 10;
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
-};
-
-const nickelSingleDown = () => {
-  nickelSCount--;
-  if (nickelSCount < 0) {
-    nickelSCount = 0;
+const billTenSingleDown = () => {
+  billTenSCount--;
+  if (billTenSCount < 0) {
+    billTenSCount = 0;
   }
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
+  billTenTCount = convertMoney(10, billTenSCount, billTenBCount);
+  billTenS.innerHTML = billTenSCount;
+  billTenT.innerHTML = billTenTCount;
 };
 
-const nickelFiveDown = () => {
-  nickelSCount -= 5;
-  if (nickelSCount < 0) {
-    nickelSCount = 0;
+const billTenFiveDown = () => {
+  billTenSCount -= 5;
+  if (billTenSCount < 0) {
+    billTenSCount = 0;
   }
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
+  billTenTCount = convertMoney(10, billTenSCount, billTenBCount);
+  billTenS.innerHTML = billTenSCount;
+  billTenT.innerHTML = billTenTCount;
 };
 
-const nickelTenDown = () => {
-  nickelSCount -= 10;
-  if (nickelSCount < 0) {
-    nickelSCount = 0;
-  }
-  nickelTCount = convertMoney(.05, nickelSCount, nickelBCount);
-  nickelS.innerHTML = nickelSCount;
-  nickelT.innerHTML = nickelTCount;
-};
-
-nickelSUp.addEventListener("click", nickelSingleUp);
-nickelSUpFive.addEventListener("click", nickelFiveUp);
-nickelSUpTen.addEventListener("click", nickelTenUp);
-nickelSDown.addEventListener("click", nickelSingleDown);
-nickelSDownFive.addEventListener("click", nickelFiveDown);
-nickelSDownTen.addEventListener("click", nickelTenDown);
+billTenSUp.addEventListener("click", billTenSingleUp);
+billTenSUpFive.addEventListener("click", billTenFiveUp);
+billTenSDown.addEventListener("click", billTenSingleDown);
+billTenSDownFive.addEventListener("click", billTenFiveDown);

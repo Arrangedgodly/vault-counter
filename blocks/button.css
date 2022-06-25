@@ -1,6 +1,6 @@
 .button {
-  width: 60px;
-  height: 60px;
+  width: 4.5vw;
+  height: 4.5vw;
   margin: 5px auto 5px auto;
 }
 
@@ -56,11 +56,11 @@
   }
 
   .button__label {
-    font-size: 5.5vw;
+    font-size: 3.5vw;
   }
 
   .button__label_alt {
-    font-size: 5.5vw;
+    font-size: 3.5vw;
     margin: 0 0 10px 0;
   }
 }

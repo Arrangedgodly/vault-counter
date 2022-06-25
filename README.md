@@ -5,6 +5,7 @@
 * Intro
 * Overview
 * Link
+* Future Plans
 
 ---
 
@@ -32,3 +33,10 @@ makes the data extremely easy to transfer into the required company spreadsheet 
 ### **Link**
 
 You can find the live version of this Vault Counter version [here](https://arrangedgodly.com/button-building/).
+
+### **Future Plans**
+
+- Clean up the JavaScript so it is no longer quite as repetetive for the inner functions
+- Create a data storage ability for users to be able to locally store their count
+- Add a clear button to empty all values simultaneously
+- Add color themes for users

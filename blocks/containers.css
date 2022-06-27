@@ -37,4 +37,8 @@
   .containers {
     width: 98%;
   }
+
+  .containers_alt {
+    height: 15vh;
+  }
 }
